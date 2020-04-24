@@ -75,18 +75,18 @@
 
 ## **CLIP 4 lw in Multi-cycle** (https://youtu.be/UYCXfCff6dE)
 
-lw เป็นคำสั่งประเภท I- format *(อธิบายไปแล้วในหัวข้อ CLIP 2 ด้านบน)*
+อธิบายคำสั่ง lw แบบ multi-cycle  
 
-ซึ่งใน muti-cycle คำสั่ง lw มีทั้งหมด 5 cycle ดังต่อไปนี้
+คำสั่ง lw ใน muti-cycle มีทั้งหมด 5 cycle ดังต่อไปนี้
 ```
-   T1 - IR = Memory[PC]                     อ่านว่าปัจจุบัน PC ชี้ไปที่ Address ใดใน Memory แล้วนำไปเก็บไว้ที่ Instruction Register 
-        PC = PC + 4                         นำ PC ปัจจุบันบวก 4 เพื่อเตรียมตัวทำคำสั่งถัดไป เพราะ 1 คำสั่งใช้ 4 bytes 
+   T1 - IR = Memory[PC]                     อ่านค่าว่า PC ชี้ไปที่ Address ใดใน Memory แล้วนำไปเก็บไว้ที่ Instruction Register 
+        PC = PC + 4                         นำค่า PC มาบวก 4 เพื่อเตรียมตัวทำคำสั่งถัดไป เพราะ 1 คำสั่งใช้ 4 bytes การบวก 4 จึงเป็นคำสั่งลำดับถัดไป
         
    T2 - A  = Reg[IR[25-21]]                 นำข้อมูลที่ register rs ไปเก็บไว้ที่ A
         B  = Reg[IR[20-16]]                 นำข้อมูลที่ register rt ไปเก็บไว้ที่ B
         ALUout = PC + (sign-extend(IR[15-0])<<2)  
         
-   T3 - ALUout = A + sign-extend(IR[15-0])  นำค่าที่ A เก็บไว้มาบวกกับ offset แล้วเก็บผลลัพธ์ที่ได้ไว้ใน ALUout
+   T3 - ALUout = A + sign-extend(IR[15-0])  นำค่าที่ A มาบวกกับ offset แล้วเก็บผลลัพธ์ที่ได้ไว้ใน ALUout
    
    T4 - MDR = Memory[ALUout]                นำผลลัพธ์จาก ALUout มาเก็บไว้ที่ Memory data register
    
