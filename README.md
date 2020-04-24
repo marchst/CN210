@@ -37,7 +37,7 @@
 |---|---|---|---|
 |6-bit|5-bit|5-bit|16-bit|
 
-ตัวอย่าง *lw $rt, offset($rs)* , *sw $rt, offset($rs)*
+ตัวอย่าง : *lw $rt, offset($rs)* , *sw $rt, offset($rs)*
 
 3. **J-Format** ใช้ในการ jump จากตำแหน่ง Address ปัจจุบันไปยังอีกตำแหน่งหนึ่ง แบ่งเป็น 2 ส่วน 
    
@@ -45,7 +45,7 @@
 |---|---|
 |6-bit|26-bit|
 
-ตัวอย่าง *j address*
+ตัวอย่าง : *j address*
 
 
 ## **CLIP 1 R-Format** (https://youtu.be/-u3ELDG5a7I) 
@@ -56,7 +56,7 @@
 |---|---|---|---|---|---|
 |6-bit|5-bit|5-bit|5-bit|5-bit|6-bit|
 
-ตัวอย่าง *func $rd, $rs, $rt*
+ตัวอย่าง : *func $rd, $rs, $rt*
    
 จะนำข้อมูลที่เก็บไว้ที่ register rs มาคำนวนกับข้อมูลที่เก็บไว้ที่ register rt แล้วนำผลลัพธ์ไปเก็บไว้ที่ register rd โดย func เป็นตัวกำหนดการคำนวณ ( +, - , * , / , ...)
 
