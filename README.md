@@ -2,7 +2,7 @@
 ## วพ.210 สถาปัตยกรรมคอมพิวเตอร์
 **เนื้อหารายวิชา**
 **Computer** ประกอบด้วย
-1.Central Processing Unit (CPU) เป็นหน่วยประมวลผลกลางซึ่งประกอบด้วย 
+/1.Central Processing Unit (CPU) เป็นหน่วยประมวลผลกลางซึ่งประกอบด้วย 
   * Artimetric and Logic Unit (ALU) ตัวคำนวนทางคณิตศาสตร์และตรรกศาสตร์  
   * Register เก็บข้อมูลระหว่างคำนวน
   * Control Unit หน่วยควบคุม
