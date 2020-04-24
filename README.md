@@ -20,7 +20,7 @@
 
 ## CLIP การบ้าน
 
-* [CLIP 1](---)(https://youtu.be/-u3ELDG5a7I) **R-Format**
+* CLIP 1(https://youtu.be/-u3ELDG5a7I) **R-Format**
 
 R- format เป็นคำสั่งประเภทหนึ่งของ MIPS ซึ่งมี 32-bit มี 6 ส่วน
 
