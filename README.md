@@ -8,6 +8,7 @@
   * Artimetric and Logic Unit (ALU) ตัวคำนวนทางคณิตศาสตร์และตรรกศาสตร์  
   * Register เก็บข้อมูลระหว่างคำนวน
   * Control Unit หน่วยควบคุม
+  
 2.Main Memory หน่วยความจำหลัก
 
 3.Input/Output ตัวรับค่าหรือแสดงผล
