@@ -1,6 +1,5 @@
 # CN210 FUNDAMENTAL OF COMPUTER ARCHITECTURE
 ## วพ.210 สถาปัตยกรรมคอมพิวเตอร์
-### **เนื้อหารายวิชา**
 
 **Computer** ประกอบด้วย
 
