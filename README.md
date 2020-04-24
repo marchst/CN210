@@ -2,8 +2,6 @@
 ## วพ.210 สถาปัตยกรรมคอมพิวเตอร์
 ### **เนื้อหารายวิชา**
 
-##
-
 **Computer** ประกอบด้วย
 
 1.Central Processing Unit (CPU) เป็นหน่วยประมวลผลกลางซึ่งประกอบด้วย 
@@ -53,7 +51,7 @@
 
 ## **CLIP 1 R-Format** (https://youtu.be/-u3ELDG5a7I) 
 
-ใอธิบายการทำงานของคำสั่งประเภท R - format (R-format opcode เป็น 000 000)
+อธิบายการทำงานของคำสั่งประเภท R - format (R-format opcode เป็น 000 000)
 
 |op | rs | rt | rd | shamt | func |
 |---|---|---|---|---|---|
