@@ -1,6 +1,7 @@
 # CN210 FUNDAMENTAL OF COMPUTER ARCHITECTURE
 ## วพ.210 สถาปัตยกรรมคอมพิวเตอร์
 **เนื้อหารายวิชา**
+
 **Computer** ประกอบด้วย
 
 1.Central Processing Unit (CPU) เป็นหน่วยประมวลผลกลางซึ่งประกอบด้วย 
