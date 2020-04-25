@@ -144,4 +144,8 @@ Pipelining คือ หน่วยความจำที่อยู่ร�
 
 ![image](http://3.bp.blogspot.com/-6RQaYhlYk2k/UKTYQVX9csI/AAAAAAAAAGQ/0xF1OxF_N_Y/s1600/02-What-is-pipelining-01.png)
 
+ใช้เวลารวม 8 ชั่วโมง
+
 ![image](http://2.bp.blogspot.com/-4YXOlZ30iCQ/UKTYR4Y4FLI/AAAAAAAAAGk/pCdSkaaazVA/s1600/02-What-is-pipelining-02.png)
+
+ใช้เวลารวม 3.5 ชั่วโมง
