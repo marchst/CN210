@@ -21,7 +21,7 @@
  * Vonneuman ข้อมูล(Data) และชุดคำสั่ง(Instruction)จะถูกเก็บบนหน่วยความจำเดียวกัน
  * Harvard ข้อมูล(Data) และชุดคำสั่ง(Instruction)จะถูกเก็บคนละหน่วยความจำ
  
-![image](harvard vs von.jpeg)
+![image](https://user-images.githubusercontent.com/60430433/80482284-25209b80-897e-11ea-99e6-959c60e733a3.jpeg)
 
 ในวิชานี้เลือกศึกษา โปรเซสเซอร์ที่มีสถาปัตยกรรมแบบ **MIPS**
 
