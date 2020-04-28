@@ -15,7 +15,7 @@
 
 3.Input/Output ตัวรับค่าหรือแสดงผล
 
-คอมพิวเตอร์แบบ Vonneuman และ Harvard
+**คอมพิวเตอร์แบบ Vonneuman และ Harvard**
  * Vonneuman ข้อมูล(Data)และชุดคำสั่ง(Instruction)จะถูกเก็บบนหน่วยความจำเดียวกัน
  * Harvard ข้อมูล(Data)และชุดคำสั่ง(Instruction)จะถูกเก็บคนละหน่วยความจำ
 
