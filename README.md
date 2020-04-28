@@ -52,7 +52,7 @@
 ตัวอย่าง : *j address*
 
 
-## **CLIP 1 R-Format** [https://youtu.be/-u3ELDG5a7I](https://youtu.be/-u3ELDG5a7I) 
+## **CLIP 1 R-Format** ([https://youtu.be/-u3ELDG5a7I])(https://youtu.be/-u3ELDG5a7I) 
 
 อธิบายการทำงานของคำสั่งประเภท R - format (R-format opcode เป็น 000 000)
 
