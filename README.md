@@ -56,10 +56,11 @@
 
 ## **CLIP 1 R-Format** [(https://youtu.be/-u3ELDG5a7I)](https://youtu.be/-u3ELDG5a7I) 
 
+อธิบายการทำงานของคำสั่ง add
 
 ## **CLIP 2 CPU** [(https://youtu.be/NWCN2Y-DYX4)](https://youtu.be/NWCN2Y-DYX4) 
 
-
+อธิบายการทำงานของ CPU
 
 ## **CLIP 3 Single cycle VS Multi-cycle** [(https://youtu.be/GuDT-ue4UV4)](https://youtu.be/GuDT-ue4UV4) 
 
