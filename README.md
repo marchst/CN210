@@ -55,12 +55,10 @@
 
 ## **CLIP 1 R-Format** [(https://youtu.be/-u3ELDG5a7I)](https://youtu.be/-u3ELDG5a7I) 
 
-อธิบายการทำงานของคำสั่งประเภท R - format (R-format opcode เป็น 000 000)  
-จะนำข้อมูลที่เก็บไว้ที่ register rs มาคำนวนกับข้อมูลที่เก็บไว้ที่ register rt แล้วนำผลลัพธ์ไปเก็บไว้ที่ register rd โดย func เป็นตัวกำหนดการคำนวณ ( +, - , * , / , ...)
 
 ## **CLIP 2 CPU** [(https://youtu.be/NWCN2Y-DYX4)](https://youtu.be/NWCN2Y-DYX4) 
 
-ยกตัวอย่างการทำงานของ MIPS CPU ตั้งแต่การเปิดเครื่องคอมพิวเตอร์ขึ้นมา โดยเริ่มจากการดูว่าตำแหน่งเริ่มต้นของ CPU ชี้ไปที่ Address ใด ซึ่งตำแหน่งเริ่มต้นอาจไม่ใช่ตำแหน่ง 0 เสมอไป จากนั้นให้ทำงานตามคำสั่งที่เก็บไว้ใน Address นั้นๆ 1 คำสั่งมี 4-bit ดังนั้นเมื่อทำงานจบ 1 คำสั่งแล้วก็จะไปทำคำสั่งที่ 4-bit ถัดไป 
+
 
 ## **CLIP 3 Single cycle VS Multi-cycle** [(https://youtu.be/GuDT-ue4UV4)](https://youtu.be/GuDT-ue4UV4) 
 
@@ -81,43 +79,33 @@
 
 อธิบายคำสั่ง lw แบบ multi-cycle  
 
-คำสั่ง lw ใน muti-cycle มีทั้งหมด 5 cycle ดังต่อไปนี้
-```
-   T1 - IR = Memory[PC]                     อ่านค่าว่า PC ชี้ไปที่ Address ใดใน Memory แล้วนำไปเก็บไว้ที่ Instruction Register 
-        PC = PC + 4                         นำค่า PC มาบวก 4 เพื่อเตรียมตัวทำคำสั่งถัดไป เพราะ 1 คำสั่งใช้ 4 bytes การบวก 4 จึงเป็นคำสั่งลำดับถัดไป
-        
-   T2 - A  = Reg[IR[25-21]]                 นำข้อมูลที่ register rs ไปเก็บไว้ที่ A
-        B  = Reg[IR[20-16]]                 นำข้อมูลที่ register rt ไปเก็บไว้ที่ B
-        ALUout = PC + (sign-extend(IR[15-0])<<2)  
-        
-   T3 - ALUout = A + sign-extend(IR[15-0])  นำค่าที่ A มาบวกกับ offset แล้วเก็บผลลัพธ์ที่ได้ไว้ใน ALUout
-   
-   T4 - MDR = Memory[ALUout]                นำผลลัพธ์จาก ALUout มาเก็บไว้ที่ Memory data register
-   
-   T5 - Reg[IR[20-16]] = MDR                นำค่าที่เก็บไว้ที่ Memory data register มาเก็บใน register rt ซึ่งคือ B
-   
-```
+คำสั่ง lw ใน muti-cycle มีทั้งหมด 5 cycle ดังนี้
 
+  * T1 - อ่านค่าว่า PC ชี้ไปที่ Address ใดใน Memory แล้วนำไปเก็บไว้ที่ Instruction Register นำค่า PC มาบวก 4 เพื่อทำคำสั่งถัดไป
+        
+  * T2 - นำข้อมูลที่ register rs ไปเก็บไว้ที่ A นำข้อมูลที่ register rt ไปเก็บไว้ที่ B   
+        
+  * T3 - นำค่าที่ A มาบวกกับ offset แล้วเก็บผลลัพธ์ที่ได้ไว้ใน ALUout
+   
+  * T4 - นำผลลัพธ์จาก ALUout มาเก็บไว้ที่ Memory data register
+   
+  * T5 - นำค่าที่เก็บไว้ที่ Memory data register มาเก็บใน register rt ซึ่งคือ B
+   
 ## **CLIP 5 beq in Multi-cycle** [(https://youtu.be/htB5g3B2tR0)](https://youtu.be/htB5g3B2tR0) 
 
-beq เป็นคำสั่งประเภท I- format เป็นคำสั่ง jump แบบมีเงื่อนไข โดยจะดูว่าข้อมูลที่ register rs และ register rt เท่ากันหรือไม่ หากเท่ากันจะทำการ jump ไปยังตำแหน่งถัดไป
+อธิบายคำสั่ง beq แบบ multi-cycle
 
-ซึ่งใน muti-cycle คำสั่ง beq มีทั้งหมด 3 cycle ดังต่อไปนี้
-```
-   T1 - IR = Memory[PC]                     อ่านว่าปัจจุบัน PC ชี้ไปที่ Address ใดใน Memory แล้วนำไปเก็บไว้ที่ Instruction Register 
-        PC = PC + 4                         นำ PC ปัจจุบันบวก 4 เพื่อเตรียมตัวทำคำสั่งถัดไป เพราะ 1 คำสั่งใช้ 4 bytes 
+ซึ่งใน muti-cycle คำสั่ง beq มีทั้งหมด 3 cycle ดังนี้
+
+  * T1 - อ่านค่า PC ว่าชี้ไปที่ Address ใดใน Memory แล้วนำไปเก็บที่ Instruction Register และนำ PC ปัจจุบันบวก 4 เพื่อเตรียมทำคำสั่งถัดไป
         
-   T2 - A  = Reg[IR[25-21]]                 นำข้อมูลที่ register rs ไปเก็บไว้ที่ A
-        B  = Reg[IR[20-16]]                 นำข้อมูลที่ register rt ไปเก็บไว้ที่ B
-        ALUout = PC + (sign-extend(IR[15-0])<<2)  
+  * T2 - นำข้อมูลที่ register rs ไปเก็บไว้ที่ A นำข้อมูลที่ register rt ไปเก็บไว้ที่ B
         
-   T3 - if(A==B) then PC = ALUout           นำค่าที่ A และ B มาเปรียบเทียบกัน หากเท่ากันจะเก็บผลลัพธ์ที่ได้ไว้ใน ALUout ถ้าไม้จะข้ามไปทำคำสั่งถัดไปทันที
-   
-```
+  * T3 - นำค่าที่ A และ B มาเปรียบเทียบกัน หากเท่ากันจะส่งผลลัพธ์ไปเก็บใน ALUout ถ้าไม่เท่ากันจะข้ามไปทำคำสั่งถัดไป
 
 ## **CLIP 6 control signal R-format** [(https://youtu.be/SFvhhpdckLI)](https://youtu.be/SFvhhpdckLI) 
 
-อธิบายการทำงาน control signal ของคำสั่ง R-format ทั้ง 4 cycle ดังนี้ 
+อธิบายการทำงาน control signal ของคำสั่ง R-format มีทั้งหมด 4 cycle ดังนี้ 
 
 ```
    T1 - MemRead = 1                   Memory มีการใช้งาน
