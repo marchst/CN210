@@ -20,7 +20,8 @@
 **คอมพิวเตอร์แบบ Vonneuman และ Harvard**
  * Vonneuman ข้อมูล(Data) และชุดคำสั่ง(Instruction)จะถูกเก็บบนหน่วยความจำเดียวกัน
  * Harvard ข้อมูล(Data) และชุดคำสั่ง(Instruction)จะถูกเก็บคนละหน่วยความจำ
-
+ 
+![image](harvard vs von.jpeg)
 
 ในวิชานี้เลือกศึกษา โปรเซสเซอร์ที่มีสถาปัตยกรรมแบบ **MIPS**
 
