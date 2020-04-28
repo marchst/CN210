@@ -71,10 +71,16 @@
 
 ## **CLIP 3 Single cycle VS Multi-cycle** (https://youtu.be/GuDT-ue4UV4) 
 
-**Single cycle** : วงจร digital ที่อ่านและทำงานตามคำสั่งจบได้ใน 1 cycle (cycle = clock ของคอมพิวเตอร์) หรือสรุปสั้นๆได้ว่า 1 คำสั่งจบได้ใน 1 cycle และไม่ว่าจะทำคำสั่งใดจะใช้เวลาเท่ากันทั้งหมดคือ 8ns มี ALU มากกว่า 1 memory แบ่งเป็น 2 ส่วน คือ instruction memory และ data memory
+|Single-cycle | Multi-cycle |
+|ALU 3 ตัว|ALU 1 ตัว|
+|Memory 2 ตัว|Memory 1 ตัว|
+|ทำงานจบใน 1 cycle ต่อ 1 คำสั่ง|1คำสั่งไม่ได้ทำงานจบได้ใน 1 cycle|
+|ทุกคำสั่งใช้เวลาในการประมวลผลเท่ากัน|แต่ละคำสั่งใช้เวลาในการประมวลผลไม่เท่ากัน|
+
+**Single cycle** : 
 ![image](https://i.stack.imgur.com/vCvw1.png)
 
-**Multi-cycle**  : วงจร digital ที่อ่านและทำงานตามคำสั่งจบในหลาย cycle เวลาในการทำแต่ละคำสั่งจะไม่เท่ากัน มี ALU 1 ตัว  instruction memory และ data memory รวมเป็นอันเดียวกัน มี Instruction register และ A, B พักข้อมูลจาก register ก่อนเข้าไปคำนวณใน ALU
+**Multi-cycle**  : 
 ![image](https://i.imgur.com/mWXHWpT.png)
 
 ## **CLIP 4 lw in Multi-cycle** (https://youtu.be/UYCXfCff6dE)
