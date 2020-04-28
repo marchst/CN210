@@ -139,6 +139,6 @@ Pipeline คือ Memory ที่เก็บเฉพาะชุดคำส
 
 **การทำงานแบบ Pipelined** ทำ 4 ครั้งใช้เวลารวม 3.5 ชั่วโมง
 
-![image](http://2.bp.blogspot.com/-4YXOlZ30iCQ/UKTYR4Y4FLI/AAAAAAAAAGk/pCdSkaaazVA/s1600/02-What-is-pipelining-02.png)
+![image](https://user-images.githubusercontent.com/60430433/80483881-0374e380-8981-11ea-871b-78918c785213.png)
 
 
