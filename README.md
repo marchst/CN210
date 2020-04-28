@@ -133,7 +133,7 @@ Pipeline คือ Memory ที่เก็บเฉพาะชุดคำส
 
 เปรียบเทียบจากภาพโดยให้ 1 คำสั่ง คือ ผ้า 1 ถุง โดยในแต่ละคำสั่งจะมีขั้นตอนการทำงาน หรือการจัดการผ้าแต่ละถุงจะมีขั้นตอนวิธีการแต่ละขั้น ยกตัวอย่างการเปรียบเทียบการทำงานของ Pipelining ดังภาพต่อไปนี้
 
-![image](http://3.bp.blogspot.com/-6RQaYhlYk2k/UKTYQVX9csI/AAAAAAAAAGQ/0xF1OxF_N_Y/s1600/02-What-is-pipelining-01.png)
+![image](https://user-images.githubusercontent.com/60430433/80482867-2e5e3800-897f-11ea-86e0-6c155c049a15.png)
 
 ใช้เวลารวม 8 ชั่วโมง
 
