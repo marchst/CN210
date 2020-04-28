@@ -71,9 +71,17 @@
 
 ## **CLIP 3 Single cycle VS Multi-cycle** (https://youtu.be/GuDT-ue4UV4) 
 
-|op | absolute address |
+|Single-cycle | Multi-cycle |
 |---|---|
 |6-bit|26-bit|
+
+| Single-cycle | Multi-cycle |
+| --- | --- |
+| ALU 3 ตัว | ALU 1 ตัว |
+| Memory 2 ตัว | Memory 1 ตัว |
+| ทำงานจบใน 1 cycle ต่อ 1 คำสั่ง | 1คำสั่งไม่ได้ทำงานจบได้ใน 1 cycle |
+| ทุกคำสั่งใช้เวลาในการประมวลผลเท่ากัน | แต่ละคำสั่งใช้เวลาในการประมวลผลไม่เท่ากัน |
+
 
 **Single cycle** : 
 ![image](https://i.stack.imgur.com/vCvw1.png)
