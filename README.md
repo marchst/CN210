@@ -62,6 +62,8 @@
 
 อธิบายการทำงานของ CPU
 
+การทำงานของ CPU ภาษาที่มนุษย์ใช้เขียนบนคอมพิวเตอร์เช่น java,Python,... นั้นจริงๆแล้วคอมพิวเตอร์จะไม่เข้าใจจึงมีการแปลงเป็นภาษาเครื่องก่อน
+
 ## **CLIP 3 Single cycle VS Multi-cycle** [(https://youtu.be/GuDT-ue4UV4)](https://youtu.be/GuDT-ue4UV4) 
 
 | Single-cycle | Multi-cycle |
